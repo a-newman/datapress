@@ -1,6 +1,6 @@
 <?php
-ob_start();
-$root = dirname(dirname(dirname(dirname(__FILE__))));
+ob_start(); //turns on output buffering, which just means that the browser stores in a buffer what would usually be outputted http://stackoverflow.com/questions/4401949/whats-the-use-of-ob-start-in-php
+$root = dirname(dirname(dirname(dirname(__FILE__)))); //dirname finds the name of the director one up from the curren tfile (the parent directory), so this function finds the parent folders
   if (file_exists($root.'/wp-load.php')) {
       // WP 2.6
       require_once($root.'/wp-load.php');
@@ -19,7 +19,7 @@ $exhibituri = $baseuri . '/wp-content/plugins/datapress';
 print <<<EOF
 
 function guess_type(input) {
-	var siteUrl = location.hostname;
+	var siteUrl = location.hostname; //returns host server; ex, for this site it would be www.github.com
 	var jsonRegEx = RegExp("https?:\/\/(w{3}.)?("  + siteUrl + "|.+)\..+\.js(on)?");
 	if(input.match(/https?:\/\/.+\.google.com.+/)) {
 		return "google-spreadsheet";
