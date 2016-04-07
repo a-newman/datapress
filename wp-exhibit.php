@@ -219,7 +219,7 @@ $wp_datapress_plugin_url = trailingslashit( get_bloginfo('wpurl') ).PLUGINDIR.'/
 wp_register_script( 'exhibit-api', 'http://projects.csail.mit.edu/datapress/exhibit-files/exhibit-api/exhibit-api.js', array(  ) );
 wp_register_script( 'exhibit-chart', 'http://projects.csail.mit.edu/datapress/exhibit-files/exhibit-api/extensions/chart/chart-extension.js', array( 'exhibit-api' ) );
 wp_register_script( 'exhibit-time', 'http://projects.csail.mit.edu/datapress/exhibit-files/exhibit-api/extensions/time/time-extension.js', array( 'exhibit-api' ) );
-
+wp_register_script( 'exhibit-map', 'http://api.simile-widgets.org/exhibit/2.2.0/extensions/map/map-extension.js?gmapkey=', array( 'exhibit-api' ) );
 wp_register_script( 'dp-jquery', "$wp_datapress_plugin_url/js/jquery-1.3.2.min.js", array() );
 wp_register_script( 'dp-jquery-ui', "$wp_datapress_plugin_url/js/jquery-ui-1.7.3.custom.min.js", array('dp-jquery') );
 wp_register_script( 'dp-mce', "$wp_datapress_plugin_url/tinymce/jquery.tinymce.js", array('dp-jquery') );
