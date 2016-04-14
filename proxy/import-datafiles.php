@@ -42,8 +42,7 @@ function scrape_google_spreadsheet($url, $type, $contents, $name) {
 	$matched2 = preg_match_all($pattern2, $url, $ids2, PREG_PATTERN_ORDER);
     if (!$matched && !$matched2) {
 		if (strpos($url, "json-in-script") === false) {
-	    	array_push($warnings, "Unable to parse spreadsheet ID.  URL should be of the form https://docs.google.com/
-	    	spreadsheet/pub?key=SPREADSHEET_ID&output=html or https://docs.google.com/spreadsheets/d/SPREADSHEET_ID/pubhtml");
+	    	array_push($warnings, "Please publish the spreadsheet. File --> Publish to the web...");
         } else {
      	    $linkdata = array();
     	    $linkdata["href"] = $url;

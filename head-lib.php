@@ -14,6 +14,7 @@ class DatapressHead {
     <script src="http://static.simile.mit.edu/exhibit/api-2.0/exhibit-api.js?autoCreate=false " type="text/javascript"></script> 
     <script src="http://projects.csail.mit.edu/datapress/exhibit-files/exhibit-api/extensions/time/time-extension.js" type="text/javascript"></script>
     <script src="http://projects.csail.mit.edu/datapress/exhibit-files/exhibit-api/extensions/chart/chart-extension.js" type="text/javascript"></script>
+    <script src="http://api.simile-widgets.org/exhibit/2.2.0/extensions/map/map-extension.js?gmapkey="></script>
     <?php
     // TODO(eob): Migrate this to GM3, which doesn't need a map key anymore.
     $google_map_api_key = get_option( 'google_map_api_key' );

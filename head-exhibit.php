@@ -10,6 +10,7 @@ if (count($exhibits_to_show) == 1) {
         <script src="http://projects.csail.mit.edu/datapress/exhibit-files/exhibit-api/exhibit-api.js?autoCreate=false" type="text/javascript"></script> 
         <script src="http://projects.csail.mit.edu/datapress/exhibit-files/exhibit-api/extensions/time/time-extension.js" type="text/javascript"></script>
         <script src="http://projects.csail.mit.edu/datapress/exhibit-files/exhibit-api/extensions/chart/chart-extension.js" type="text/javascript"></script>
+        <script src="http://api.simile-widgets.org/exhibit/2.2.0/extensions/map/map-extension.js?gmapkey="></script>
         <link rel="stylesheet" type="text/css" href="<?php echo $plugin_dir ?>/exhibit.css" />
 
         <?php
